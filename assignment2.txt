@@ -1,0 +1,14 @@
+Name: Munafbhai Umatiya
+Student Id:200439752
+
+http://www2.cs.uregina.ca/~muw219/MyWebsite/login.html
+Above is the link of hercules assignment.
+
+
+Files and its purpose.
+
+1.Login file - starting page where user is suppose to login to enter.
+2.Signup file - user can create an account if he/she is not existing user.
+3.Post page - It provides feature to post or repost.
+4.Profile page - user can view his/her details and previous posts.
+5.Home page - Default page where others tweets are listed.

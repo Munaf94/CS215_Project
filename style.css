@@ -1,0 +1,691 @@
+     * {
+        margin: 0;
+        padding: 0;
+    }
+    /*   ................................. Profile  page styling  .......................................... */
+    
+    /* main container */
+    .grid-container1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-auto-rows: minmax(15px, auto);
+        grid-row-gap: 30px;
+        margin: 5px;
+       
+    }
+   
+    /* containers for navigation links */
+    .grid-container1-navigation {
+        background-color: rgba(0, 0, 0,0.2);
+        text-align: center;
+        grid-auto-rows: minmax(20px, auto);
+        height: 50px;
+        
+    }
+    
+    /* p tags inside .grid-container1-navigation */
+    .navelements {
+        margin-top: 5px;       
+    }
+    .logo {
+        color: rgb(221, 128, 7);
+        text-shadow: 1px 1px rgb(221, 128, 7);
+        letter-spacing: 2px;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bold;
+      
+    }
+        
+    
+    .navelements>a {
+       margin:0;
+       padding:0;
+        color: rgb(221, 128, 7);
+        font-size: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        display:block;
+    }
+    .navelements>a:hover, .navhover:hover {
+        background-color:blue;
+        color:white;
+    }
+
+    .active>a
+    {
+        color:red;
+        
+    }
+
+    
+    /* left side content */
+    
+    .leftsidebar {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        height: 500px;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-auto-columns: minmax(20px, auto);
+        margin-top: 10px;
+    }
+    
+    /* embeded inside leftsidebar */
+    .userdetails {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        background-color: lightgoldenrodyellow;
+        width: 300px;
+        height:350px;
+    }
+    
+    .userdetails>img {
+        height: 250px;
+        width: 250px;
+        text-align: center;
+        margin-top: 10%;
+        border: 1px solid olive;
+    }
+    
+    .userdetails>h2 {
+        color: darkmagenta;
+        font-family: 'Times New Roman', Times, serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .userdetails>span {
+        color: lightseagreen;
+    }
+    
+    /* main right side bar container */
+    .rightsidebar {
+        grid-column-start: 3;
+        grid-column-end: 5;
+        width: 115%;
+        overflow-y: scroll;
+        height: 550px;
+        display: grid;
+        grid-template-columns: 1fr;
+        border: 1px solid rgb(11, 59, 11);
+        grid-gap: 5px;
+        background-color: #eee;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+    
+    /* horizontal containers */
+    .show-post-templates {
+        border-bottom: 1px solid darkgoldenrod;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: minmax(10px, auto);
+        grid-gap: 4px;
+    }
+    
+    .left-top {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        text-align: center;
+    }
+    
+    .left-top>img {
+        width: 50px;
+        padding: 5px;
+    }
+    
+    .left-top>p {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .left-top>span {
+        color: lightseagreen;
+    }
+    
+    .time {
+        color:green;
+        font-size: 13px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    
+    .right-top {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        text-align: center;
+        padding: 25px 0;
+        color: purple;
+       margin:5px 5px;
+    }
+    
+    .left-bottom {
+        grid-column: 1/2;
+        text-align: center;
+        Color: grey;
+        padding: 8px;
+    }
+    
+    .center-bottom {
+        grid-column: 2/3;
+        text-align: center;
+        Color: grey;
+        padding: 8px;
+    }
+    
+    .right-bottom {
+        grid-column: 3/4;
+        text-align: center;
+        Color: grey;
+        padding: 8px;
+    }
+    
+    /* styling three buttons */
+    .right-bottom>input, .left-bottom>input, .center-bottom>input {
+        text-decoration: none;
+        background-color: rgb(231, 216, 216);
+        padding: 8px;
+        vertical-align: middle;
+        width:50%;
+        border:none;
+    }
+    /* .right-bottom>input:hover, .left-bottom>input:hover, .center-bottom>input:hover {
+        color:darkgoldenrod;
+        border:1px solid green;
+    } */
+    .right-bottom>form>input[type="submit"]
+    {
+        text-decoration: none;
+        background-color: rgb(231, 216, 216);
+        padding: 8px;
+        vertical-align: middle;
+        width:50%;
+        border:none;
+    }
+    
+    /* previous user post embeeded in repost */
+    .repost-right-middle {
+       
+        grid-column: 2/4;
+        margin-right: 5px;
+        background-color:rgb(222, 233, 202);
+        
+    }
+
+    
+    
+    
+    /* 5 five footer links */
+    .General-footer {
+        border: 1px solid tomato;
+        text-align: center;
+        background-color: mediumseagreen;
+        padding: 5px;
+       
+    }
+   .General-footer:hover
+   {
+    background-color:rgb(231, 120, 45);
+   }
+    .footerlinks>a:hover
+    {
+        color:blue;
+       
+    }
+    .footerlinks>a {
+        text-decoration: none;
+        color: khaki;
+    }
+
+    /* ............................                 Home Page styling .....................................        */
+    
+    /* left hand space */
+    .leftspace {
+        grid-column: 1/2;
+    }
+
+    /* main container to show post */
+    
+    .show-posts {
+        grid-column-start: 2;
+        grid-column-end: 5;
+        width: 115%;
+        overflow-y: scroll;
+        height: 550px;
+        display: grid;
+        grid-template-columns: 1fr;
+        border: 1px solid rgb(123, 204, 206);
+        grid-gap: 5px;
+        background-color: #eee;
+       
+       
+    }
+   
+   
+   
+
+    /* ................................         post Page styling    ................................ */
+    
+    /* body part of post page */
+    .post-page-body {
+        /* background-color: black; */
+        background-image: url('background3.jpg');
+      
+    }
+    
+    /* main div for  posting form */
+    .Post-form {
+        grid-column: 2/5;
+        height: 500px;
+        display: grid;
+        grid-template-columns: 0.5fr 1.5fr 0.5fr;
+        grid-template-rows: 0.2fr 0.5fr 0.1fr;
+        grid-auto-rows: minmax(15px, auto);
+        margin-bottom:20px;
+        
+    }
+    
+    /* a blank div */
+    .top-space {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row: 1/2;
+        height: 30px;
+        width:300px;
+        margin-left:16%;
+    }
+    
+    /* text area part of post form */
+    .form-elements1 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row: 2/3;
+        text-align: center;
+        background-color:rgba(0,0,0 0.5);
+        border:3px solid rgb(47, 248, 171);
+        color: darkmagenta;
+        
+    }
+    
+     
+    .form-elements1>textarea
+    {
+        text-align: center;
+        vertical-align: middle;
+        font-size:25px;
+        font-family: 'Times New Roman', Times, serif;
+        margin:3px 4px;
+        background-color: white;
+       
+    }
+    .form-elements1>textarea:focus
+    {
+        background-color:lightblue;
+    }
+    
+    /* button part of post form */
+    .form-elements2 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row: 3/4;
+        text-align: center;
+        border: 2px solid darkblue;
+        background-color: khaki;
+    }
+
+    .postdiv
+    {
+        background-color:lightblue;
+        margin:3px 4px;
+       height:150px;
+       display:grid;
+       grid-template-columns: 2fr 1fr 2fr;
+       
+    
+    }
+    .leftTop{
+        grid-column:1/2;
+        
+    }
+    .UserProfile
+    {
+        height:100px;
+        width:100px;
+        margin-top:6px;
+    }
+    .rightTop{
+        grid-column:2/4;
+    }
+    .rightTop>p
+    {
+        margin-top:20px;
+    }
+    
+
+    
+   
+    
+    .numOfcharacters
+    {
+        margin-top:10px;
+        background-color: white;
+    }
+    .form-elements1>h2
+    {
+        background-color: white;
+    }
+    
+    .form-elements2>input 
+    {
+            width: 50%;
+            padding: 8px;
+            border-radius: 8px;
+            margin-top: 20px;
+            margin-bottom: 15px;
+            text-align: center;
+            font-weight: bold;
+            font-size:20px ;
+            border:2px solid rgb(243, 49, 82);
+          
+     }
+     .form-elements2>input:hover
+     {
+         background-color:blue;
+         color:white;
+     }
+        
+    
+    /*    ...............................................          Login Page Styling       .................................... */
+    
+    /* left hand container for content and logo */
+    .left {
+        height: 500px;
+        width: 500px;
+        margin: 0 1% 1.5% 5%;
+        text-align: center;
+    }
+    
+   
+    
+    .left>img {
+        border: 1 px solid;
+        margin-top: 25px;
+    }
+    
+    .left>h1 {
+      
+        font-weight: bold;
+        font-size: 35px;
+        margin-top: 50px;
+        color:olive;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        word-spacing: 3px;
+    }
+    
+    .left>p {
+        color: maroon;
+        line-height: 2.0;
+        font-size: 20px;
+        color: olive;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        word-spacing: 1px;
+        margin: 10px 0;
+    }
+    
+    .getstartlink {
+        text-decoration: none;
+        text-align: center;
+        font-size: 25px;
+        color: darkblue;
+        background-color: indianred;
+        padding: 10px;
+        word-spacing: 2px;
+        border:2px solid black;
+    }
+    .getstartlink:hover
+    {
+       color:chartreuse;
+       background-color: purple;
+       border:2px solid chartreuse;
+    }
+    
+    /* right hand side container for login form */
+    .right {
+        grid-column-start: 4;
+        grid-column-end: 6;
+        grid-gap: 5px;               
+    }
+   
+
+    /* aside inside login-form div */
+    
+     
+    .loginform
+    {
+        border:1px solid;
+        min-height:400px;
+        max-height: 500px;
+        background-color:lightyellow;
+       margin-top: 8%;
+       margin-right: 5%;
+
+    }
+   
+    
+    .Caption>h1
+    {
+       color:blue;
+       text-align: center;
+       margin-top:20px;
+       letter-spacing: 2px;
+       font-size: 50px;
+    }
+    .email
+    {
+        margin:10% 0 0 25%;
+    
+    }
+    .email>input
+    {
+        border:2px solid rgb(230, 193, 33);
+        border-radius:10px;
+        font-size:15px;
+        text-align: center;
+        width:260px;
+        height:35px;
+        display:block;
+        
+    }  
+    
+    
+    .error1,.error2
+    {
+        display:none;
+        color:red;
+
+    }
+    .passwd
+    {
+        margin:5% 0 0 25%;
+    }
+    .passwd>input
+    {
+        border:2px solid rgb(230, 193, 33);
+        border-radius:10px;
+        font-size:15px;
+        text-align: center;
+        width:260px;
+        height:35px;
+        display:block;
+    }
+    
+
+    .btn>input[type="submit"]
+    {
+        background-color:rgb(16, 104, 104);
+        padding:3px;
+        width:260px;
+        border-radius: 5px;
+        height:40px;
+        font-weight: bold;
+        margin:5% 0 0 25%;
+       
+    }
+
+    .btn>input[type="submit"]:hover
+    {
+        border:none;
+        background-color: black;
+        color:white;
+    }
+    .newAccountLink
+    {
+        margin-left:32%;
+        margin-top:5%;
+        margin-bottom:10px;
+        margin:5% 0 1% 32%;
+    }
+    .newAccountLink>a
+    {
+        text-decoration: none;
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color:rgb(61, 33, 87);       
+        
+    }
+    .newAccountLink>a:hover
+    {
+        
+        font-size: 22px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color:chocolate;
+    }
+    .requiredMessages
+    {
+        border:1px solid red;
+        color:red;
+        margin-left:30%;
+        margin-top:5%;
+        width:210px;
+        text-align: center;
+        padding:2px;
+        display:none;
+        
+    }
+    #usernameRequired, #passwordRequired
+    {
+        display:none;
+
+    }
+    
+    
+    
+    /*  .....................................           signup page     ............. ..............................*/
+    
+    /* body part of signup page */
+    .signupbody {
+        background-image: url(background1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    
+    /* main container for signup form */
+    .register {
+        grid-column-start: 2;
+        grid-column-end: 5;
+        border:2px solid green;
+        max-height:600px;
+        min-height: 500px;
+        background-color: rgba(0, 0, 0, 0.7);
+
+    }
+    
+    .register:hover {
+        background-color: rgba(0, 0, 0, 0.3);
+        color: khaki;
+        border: 2px solid khaki;
+
+    }
+    
+    .caption2 {
+        color: khaki;
+        word-spacing: 8px;
+        margin-top:10px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 45px;
+    }
+    table,tr,td
+    {
+       
+        border-collapse: collapse;
+    }
+    table
+    {
+        margin:3% 0 0 15%;
+    }
+    .errormessages
+    {
+        color:red;
+        margin-left:20px;
+        display:none;
+    }
+    td:first-child
+    {
+       font-weight: bold;
+       text-align: right;
+       font-size: 17px;
+       padding:5px;
+       color:chocolate;
+       width:200px;
+    }   
+    td:nth-child(2)
+    {
+        padding:2px 1px;
+        width:550px;;
+
+    }
+    td:nth-child(2)>input
+    {
+      width:45%;
+      height:25px;
+      border-radius: 8px;
+      text-align: center;
+      margin-left:20px;
+     } 
+
+   
+    
+    #buttonstyle {
+       padding:5px;
+       height:35px;
+       margin-top:10px;
+    }
+    .SignupRequiredMessages
+    {
+        border:1px solid red;
+       width:50%;
+       text-align: center;
+       margin:10px 20px;
+       color:rgb(243, 26, 26);
+       background-color:rgb(231, 211, 211);
+       padding:5px 0;
+       display:none;
+    }
+    .signupErrorText
+    {
+        display:none;
+    }
+   
+    .signupfailed{
+        font-size: 16px;
+        padding:3px;
+        color:red;
+    }
+
+     
+    

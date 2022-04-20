@@ -1,0 +1,18 @@
+Name: Munafbhai Umatiya
+Student Id:200439752
+class: CS215
+Assignment 6
+http://www2.cs.uregina.ca/~muw219/MyWebsite/login.php
+
+1.login.php	- A login page where user enters their credentials and upon verification, he/she is taken to home page using php.
+2.signup.php 	- A signup page where a new user registers to use this website and the records are inserted upon correct validation.
+3.profile.php	- A profile page which displays logged user's profile and their post.
+4.post.php 	- It allows user to create a new post or a repost.
+5.logout.php	- Handles logout mechanism when user loggs out.
+6.home.php	- The main home page whihc lists the most recent posts at the top.
+7.style.css	- a page used for styling all the php pages.
+8.ajaxCall.js   - make a javascript call to all the input type=button and adds an event listener to that button upon click
+9.ajax.js       - performs an ajax request to obtain the number of likes and dislikes upon button click
+10.ajax.php	- performs a server side query and returns a json query to update number of likes and dislikes upon click even
+11.timerJsCall.js  - a javascript file to make an ajax request in every fixed interval of time to execut time based updation
+12.timerJsCall.php - a php file to query database to get update likes and dislikes for every post
